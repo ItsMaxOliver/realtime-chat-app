@@ -20,10 +20,6 @@ const pusher = new Pusher({
   encrypted: true
 });
 
-pusher.trigger('my-channel', 'my-event', {
-  "message": "hello world"
-});
-
 app.prepare()
   .then(() => {
   
