@@ -119,7 +119,7 @@ class Chat extends Component {
                             </div>
                             ) }
                             
-                            <ChatMessage message={chat.message} position={position} />
+                            <ChatMessage message={chat.message} timestamp={chat.timestamp} position={position} />
                             
                         </Fragment>
                     );
