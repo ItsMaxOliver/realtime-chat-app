@@ -26,9 +26,7 @@ class Chat extends Component {
             const { chats } = this.state;
             // appending the new chat and setting the new state
             chat && chats.push(chat);
-            this.setState({
-                chats
-            });
+            this.setState({ chats });
         });
 
         // binding to the connected event from Pusher client to fetch all messages
@@ -37,9 +35,7 @@ class Chat extends Component {
                 .then(response => {
                     const chats = response.data.messages;
                     // set the state with the chats we recieved in response to the axios post
-                    this.setState({
-                        chats
-                    });
+                    this.setState({ chats });
                 });
         });
 
