@@ -33,7 +33,7 @@ class IndexPage extends Component {
         };
         
         return (
-            <Layout pageTitle="Realtime Chat">
+            <Layout pageTitle="Sentiment Analyzed Realtime Chat">
             
                 <main className="container-fluid position-absolute h-100 bg-dark">
                 
@@ -69,6 +69,4 @@ class IndexPage extends Component {
   
 }
 
-export default () => (
-  <IndexPage />
-);
+export default IndexPage;

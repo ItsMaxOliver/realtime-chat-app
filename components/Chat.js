@@ -16,7 +16,7 @@ class Chat extends Component {
     }
 
     componentDidMount() {
-        // set up a Pusher connection and channelsubscription when the component mounts
+        // set up a Pusher connection and channel subscription when the component mounts
         this.pusher = new Pusher(process.env.PUSHER_APP_KEY, {
             cluster: process.env.PUSHER_APP_CLUSTER,
             encrypted: true
@@ -42,7 +42,7 @@ class Chat extends Component {
                     const chats = response.data.messages;
                     // set the state with the chats we recieved in response to the axios post
                     this.setState({ chats });
-                });
+                }); 
         });
 
     }
